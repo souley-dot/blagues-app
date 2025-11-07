@@ -15,7 +15,7 @@ const cors=require("cors");
 const Blague=require('./Entity/blagues')
 
 ///// Les middlewares /////
-app.use(cors({origin: ["https://souley-dot.github.io", "https://souley-dot.github.io/blagues-app-front"]
+app.use(cors({origin: "https://souley-dot.github.io/blagues-app-front"
 }));
 app.use(express.json())
 app.use('/apiv1/blagues',blagueRoutes);
