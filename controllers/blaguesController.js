@@ -1,6 +1,3 @@
-//////// Importation du fichier contenant les modèle //////
-
-///const { Sequelize } = require("sequelize")
 
 //////Importation de la base de données ////////
 const sequelize = require('../Config/config');
