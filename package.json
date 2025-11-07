@@ -6,7 +6,8 @@
  
   "scripts": {
     
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
   "author": "Diallo Souleymane",
   "license": "ISC",
