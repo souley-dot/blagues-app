@@ -21,7 +21,7 @@ const Blague=require('./Entity/blagues')
 app.use(cors( /*{origin: "https://souley-dot.github.io/blagues-app-front"}*/));
 app.use(express.json())
 app.use('/apiv1/blagues',blagueRoutes);
-app.use('/api-docs')
+app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
 ////// Le port sur lequel va tourner le server /////
 const PORT = process.env.PORT || 3000;
