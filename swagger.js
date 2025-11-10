@@ -14,8 +14,11 @@ const options ={
         },
         servers:[
             {
-                url: 'https://balgues-app-1.onrender.com/apiv1',
+                url: 'https://blagues-app-1.onrender.com',
             },
+            {
+                url: 'http://localhost:3000' //// En local ////
+            }
         ],
     },
 
