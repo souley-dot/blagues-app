@@ -7,6 +7,9 @@ const sepuelize=require('./Config/config.js');
 ///// Importation des fichier contenant nos routes //////
 const blagueRoutes=require('./Routes/routesBlague');
 
+/// Swagger /////
+const { swaggerUi, swaggerSpec }=require('./swagger.js')
+
 ///////////// Importation de cors //////////////////////////////////
 const cors=require("cors");
 
@@ -15,11 +18,10 @@ const cors=require("cors");
 const Blague=require('./Entity/blagues')
 
 ///// Les middlewares /////
-app.use(cors( /*{
-    origin: "https://souley-dot.github.io/blagues-app-front"
-}*/));
+app.use(cors( /*{origin: "https://souley-dot.github.io/blagues-app-front"}*/));
 app.use(express.json())
 app.use('/apiv1/blagues',blagueRoutes);
+app.use('/api-docs')
 
 ////// Le port sur lequel va tourner le server /////
 const PORT = process.env.PORT || 3000;
