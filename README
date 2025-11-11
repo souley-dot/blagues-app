@@ -1,0 +1,48 @@
+
+# Blagues App - API (Backend)
+
+## Desciption
+Cette API permet de gérer et consulter des blagues.
+Elle a été développée avec **nodeJs**,**Express**,et **Sequelize(sqLite)**.
+Le projet est hébergé sur **Render** et documenté avec **swagger UI**
+
+---
+## Déploiement 
+
+- ** Lien vers le API en  ligne** : [https://blagues-app-1.onrender.com]
+- ** Documentation Swagger** :[https://blagues-app-1.onrender.com/api-docs]
+
+---
+### Technologies utilisées 
+
+- NodeJs
+- Express
+- Sequelize ( avec sqLite)
+- swagger UI pour la documentation
+- Cors pour les échanges avec le front hébergé sur GitHub Pages
+
+---
+
+## Endpoints principaux 
+
+- Méthode   -      Endpoint          -         Description
+- `GET`        `/apiv1/blagues`              Récupère toutes les blagues
+- `GET`         `/apiv1/blagues/:id`         Récupère une blague selon son ID
+- `GET`         `apiv1/blagues/random`       Retourne une balgue aléatoire
+- `POST`        `apiv1/blagues/add`          Ajoute une nouvelle blague
+
+## Exemple de réponse
+
+``` json
+{
+    "id":7,
+    "question":"Pourquoi le football c'est rigolo",
+    "response":"Parce que Thierry en rit"
+}
+
+## Installation local
+
+- git clone https://github.com/souley-dot/blagues-app-back.git
+- cd blagues-app-back
+- npm install
+- npm start
